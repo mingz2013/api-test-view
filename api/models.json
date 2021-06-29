@@ -1,0 +1,144 @@
+{
+  "artifact": {
+    "desc": "神器",
+    "uri_list": {
+      "./api/artifact_list.json": {
+        "desc": "获取神器列表",
+        "params": [
+          {
+            "key": "user_id",
+            "view_type": "text",
+            "value_type": "int",
+            "check": "1000 < user_id < 1000000",
+            "desc": "userId",
+            "default": 10001
+          },
+          {
+            "key": "text",
+            "view_type": "textarea",
+            "value_type": "text",
+            "check": "1000 < textarea < 1000000",
+            "desc": "text",
+            "default": ""
+          },
+          {
+            "key": "num",
+            "view_type": "select",
+            "value_type": "int",
+            "check": "1000 < num < 1000000",
+            "desc": "num",
+            "default": 10001,
+            "select_options": [
+              {
+                "desc": 1,
+                "value": 1
+              },
+              {
+                "desc": 2,
+                "value": 2
+              }
+            ],
+            "select_options_query": "./api/num_select_options.json"
+          },
+          {
+            "key": "date_time",
+            "view_type": "datetime-local",
+            "value_type": "datetime",
+            "check": "1000 < date_time < 1000000",
+            "desc": "date time",
+            "default": 0
+          }
+        ]
+      },
+      "./api/equipment_list.json": {
+        "desc": "获取装备列表",
+        "params": [
+          {
+            "key": "user_id",
+            "view_type": "text",
+            "value_type": "int",
+            "check": "1000 < user_id < 1000000",
+            "desc": "userId",
+            "default": 10001
+          }
+        ]
+      }
+    }
+  },
+  "equipment": {
+    "desc": "装备",
+    "uri_list": {
+      "./api/artifact_list.json": {
+        "desc": "获取神器列表",
+        "params": [
+          {
+            "key": "user_id",
+            "view_type": "text",
+            "value_type": "int",
+            "check": "1000 < user_id < 1000000",
+            "desc": "userId",
+            "default": 10001
+          },
+          {
+            "key": "num",
+            "view_type": "select",
+            "value_type": "int",
+            "check": "1000 < num < 1000000",
+            "desc": "num",
+            "default": 10001,
+            "select_options": [
+              {
+                "desc": 1,
+                "value": 1
+              },
+              {
+                "desc": 2,
+                "value": 2
+              }
+            ],
+            "select_options_query": "./api/num_select_options.json"
+          },
+          {
+            "key": "date_time",
+            "view_type": "datetime-local",
+            "value_type": "datetime",
+            "check": "1000 < date_time < 1000000",
+            "desc": "date time",
+            "default": 0
+          }
+        ]
+      },
+      "./api/equipment_list.json": {
+        "desc": "获取装备列表",
+        "params": [
+          {
+            "key": "user_id",
+            "view_type": "text",
+            "value_type": "int",
+            "check": "1000 < user_id < 1000000",
+            "desc": "userId",
+            "default": 10001
+          }
+        ]
+      }
+    }
+  },
+  "userdata": {
+    "desc": "用户数据",
+    "uri_list": {
+      "./api/user_info.json": {
+        "desc": "获取用户信息",
+        "params": [
+          {
+            "key": "user_id",
+            "view_type": "text",
+            "value_type": "int",
+            "check": "1000 < user_id < 1000000",
+            "desc": "userId",
+            "default": 10001
+          }
+        ]
+      }
+    }
+  }
+}
